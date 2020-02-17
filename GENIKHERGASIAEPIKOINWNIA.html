@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>  ΒΙΒΛΙΟΦΑΓΟΣ ΕΠΙΚΟΙΝΩΝΙΑ </title>
+</head> 
+<body style="background-color:#c1803e;">
+<h2 style="color:indigo; text-align:center;"> ΠΛΗΡΟΦΟΡΙΕΣ ΓΙΑ ΤΟΝ ΒΙΒΛΙΟΦΑΓΟ </h2><br><br>
+<strong style="color:indigo">Καλησπέρα σας, για την καλύτερη εξυπηρέτηση σας και για τη επικοινωνία σας με τον υπεύθυνο του καταστήματος μπορείτε να καλέσετε στο: 210-5816482 ή στο:6985433689 ή μέσω FAX στο:211-5215676 </strong><br><br>
+<strong style="color:indigo"> Η πρόσοψη του καταστήματός μας ειναι αυτή --->  </strong> <img src="eik7.jpg"><br><br>
+<strong style="color:indigo"> Θα μας βρείτε ανοιχτά από Δευτέρα έως Παρασκευή απο τις 8 το πρωί έως τις 8 το βράδυ αλλά και το Σάββατο απο τις 9 το πρωί μέχρι τις 5 το απόγευμα. </strong><br><br>
+<strong style="color:indigo"> Η οδός του βιβλιοπωλείου είναι η Πλαστήρα 17 , ΤΚ:12461 , δίπλα από τον σταθμό του μετρό στο Χαϊδάρι </strong> <BR><BR>
+
+<form class="contact">
+<div style="background-color: indigo; color: white; text-align:center;">Φόρμα επικοινωνίας</div></b>
+<table class="cont_table">
+  <tr><td>
+<label for="name">Ονοματεπώνυμο<sup>*</sup> :</label></td>
+<td><input type="text" required id="name"></td></tr>
+
+<tr><td><label for="phone">Τηλέφωνο :</label></td>
+<td><input type="text" size="10" id="phone"></td></tr>
+
+<tr><td><label for="email">E-mail<sup>*</sup> :</label></td>
+<td><input type="email" id="email" required placeholder="address@email.com"></td></tr>
+
+<tr><td><label for="message">Σχόλια<sup>*</sup> :</label></td>
+<td><textarea id="message" required cols="60" rows="8" ></textarea></tr></td>
+
+</table>
+<input type="reset"  value="CLEAR">
+ <input type="submit" value="SEND" onclick="ClickMe()">
+</form>
+<script>
+    function CheckRequired(name,mail,mess,phone)
+    {
+      var exit = 0;
+      if (name === "") {
+        alert("Το πεδίο Ονοματεπώνυμο είναι υποχρεωτικό.");
+        exit = 1;
+      }
+      if (mail === ""){
+        alert("Το πεδίο E-mail είναι υποχρεωτικό.");
+        exit = 1;
+      }
+      if (mess == ""){
+        alert("Το πεδίο Σχόλια είναι υποχρεωτικό.");
+        exit = 1;
+      }
+      if (exit != 1){
+        var newWindow = window.open("");
+        newWindow.document.write("<h3 style='background-color:indigo; color: white; text-align:center;'>Είστε σίγουροι οτι θελετε να αποστειλετε το παρακατω mail ?</h3>");
+        newWindow.document.write("<p><b>Ονοματεπώνυμο: </b>"+name+"</p>");
+        newWindow.document.write("<p><b>Τηλέφωνο: </b>"+phone+"</p>");
+        newWindow.document.write("<p><b>E-mail: </b>"+mail+"</p>");
+        newWindow.document.write("<p><b>Αίτημα/Ερώτημα: </b>"+mess+"</p>");
+        var mail = 'mailto:bibliofagos@gmail.com?subject=Αυτόματη%20Φόρμα%20Επικοινωνίας&body=Ονοματεπώνυμο%3A%20'+name+'%0AΤηλέφωνο%3A%20'+phone+'%0AΑίτημα/Ερώτημα%3A%20'+mess;
+        newWindow.document.write("<a id='sendMail' href="+mail+">Επιβεβαίωση</a>");
+        newWindow.document.write("<button id='close' onclick='window.close()'>Ακύρωση</button>");
+      }
+      return exit;
+    }
+    function sendMail(mail,mess,phone) {
+        var MailWindow = window.open("<a href='mailto:bibliofagos@gmail.com'></a>");
+    }
+    function ClickMe()
+    {
+      CheckRequired(document.getElementById('name').value,document.getElementById('email').value,document.getElementById('message').value,document.getElementById('phone').value);
+    }
+</script><BR><BR><BR>
+<a href="file:///C:/Users/Nektarios/Desktop/GENIKHERGASIA/GENIKHERGASIAKENTRIKH.html"strong style ="  color:indigo "> ΚΕΝΤΡΙΚΗ ΣΕΛΙΔΑ </strong>
