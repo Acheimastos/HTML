@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head><title> Δημιουργία φόρμας συλλογής στοιχείων </title></head>
+<body>
+<form >
+Όνομα: <input type="text" name="firstname" size="30"><br>
+Διεύθυνση: <textarea name="addr"rows="3" cols="30" id="addr"  > </textarea><br>
+Ταχ. Κωδικός: <input type="text" name="zip" maxlength="6" size="6" placeholder="ταχυδρομικοι κωδικλοι" ><br >
+</form>
+<br><br><br>
+<label for="lastname2018"> Επώνυμο:</label>
+<input type="text" id="lastname2018" name="lastname"><br>
+Διεύθυνση Κατοικίας: <textarea name="homeaddr" > </textarea><br>
+<label for="homezip2018"> Ταχ. Κωδικός κατοικίας:</label>
+<input type="text" name="homezip" id="homezip2018" ><br >
+<br><br><br>
+<fieldset>
+<legend>Στοιχεία Επικοινωνίας</legend>
+<label for="firstname2">Όνομα:</label>
+<input value="Όνομα" type="text" id="firstname2" name="firstname2"><br>
+Διεύθυνση: <textarea name="addr2"> </textarea><br>
+<label for="zip2">Ταχ. Κωδικός:</label>
+<input placeholder="Ταχυδρομικοί Κωδικοί " type="text" name="zip2" id="zip2" ><br >
+<label for="email"> email: </label>
+<input placeholder="hw_webyech@unipi.gr" type="email" name="email" id="email">
+</fieldset>
+<br><br><br>
+Χώρα: <select name="country" size="1" >
+<option>UK</option>
+<option> Greece </option>
+<option>Italy</option>
+<option>France</option>
+</select>
+<br><br><br><br>
+Χώρα: <select multiple size="5" name="mediterranean">
+<option >UK</option>
+<optgroup label="Μεσογειακές Χώρες">
+<option>  Greece </option>
+<option>Italy</option>
+<option>France</option>
+</optgroup>
+</select> <br>
+
+<br><br><br><br>
+<label for="payment1"> MASTERCARD </label>
+<input type="radio" id="payment1" name="payment1" value="p1">
+<label for="payment2"> VISA </label>
+<input type="radio" id="payment2" name="payment2" value="p2">
+<label for="payment3"> CASH </label>
+<input checked type="radio" id="payment3" name="payment3" value="p3">
+<br><br><br><br>
+<form >
+USERNAME: <input type="text" name="USERNAME"><br>
+PASSWORD: <input type="PASSWORD" name="password" maxlength="8" > <br>
+</FORM>
+<input type="reset" value="RESET"> 
+<br><br><br>
+<input type="submit" value="ΑΠΟΣΤΟΛΗ ΑΡΧΕΙΩΝ ">

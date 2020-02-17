@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>Εγγραφή Χρήστη</title>
+<script type="text/javascript">
+//θα συμπληρωθεί στο δεύτερο ερώτημα 
+</script>
+</head>
+<body>
+<h2 align="center">Φόρμα Εγγραφής</h2>
+<form name="form1">
+Username (min 4 χαρακτήρες) <input type="text" name="username"><br/>
+Password (min 6 χαρακτήρες) <input type="password" name="password1"><br/>
+Ξαναδώστε το Password <input type="password" name="password2"><br/>
+<div align="right">
+<input type="button" value="Εγγραφή" onclick="registration(form1.username.value,
+form1.password1.value, form1.password2.value)"/>
+<input type="reset" value="Ακύρωση"/>  
+</div>
+</form>
+</body>
+</html>
